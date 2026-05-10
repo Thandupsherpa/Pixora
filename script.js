@@ -21,6 +21,7 @@ imageInput.addEventListener("change", (e) => {
       img.src = event.target.result;
 
       img.classList.add("preview-image");
+      
 
       preview.appendChild(img);
     };
