@@ -1,0 +1,157 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  background: #222831;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.container{
+  max-width: 900px;
+  width: 100%;
+  margin: auto;
+  background: #393E46;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+h1{
+  text-align: center;
+  color: #00ADB5;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+input{
+  width: 100%;
+  margin: 20px 0;
+  color: #00ADB5;
+  background: #222831;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #00ADB5;
+  cursor: pointer;
+}
+
+#preview{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.preview-image{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+}
+
+button{
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background: #00ADB5;
+  color:#EEEEEE;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+button:hover{
+  opacity: 0.8;
+  transform: scale(1.01);
+}
+.file-label{
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  background: #222831;
+  color: #00ADB5;
+  border: 2px dashed #00ADB5;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.file-label:hover{
+  background: #00ADB5;
+  color: #222831;
+  border-style: solid;
+  transform: scale(1.01);
+}
+
+
+@media (max-width: 768px){
+
+  body{
+    padding: 15px;
+  }
+
+  .container{
+    padding: 20px;
+  }
+
+  h1{
+    font-size: 1.7rem;
+  }
+
+  #preview{
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .preview-image{
+    height: 180px;
+  }
+
+  button{
+    padding: 14px;
+    font-size: 15px;
+  }
+}
+
+
+
+@media (max-width: 480px){
+
+  body{
+    padding: 10px;
+  }
+
+  .container{
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  h1{
+    font-size: 1.4rem;
+  }
+
+  input{
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  #preview{
+    grid-template-columns: 1fr;
+  }
+
+  .preview-image{
+    height: 220px;
+  }
+
+  button{
+    padding: 12px;
+    font-size: 14px;
+  }
+}
